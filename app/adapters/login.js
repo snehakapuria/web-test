@@ -2,16 +2,14 @@ import DS from 'ember-data';
 
 export default DS.RESTAdapter.extend({
   namespace:'api',
-// host:'https://localhost:3000',
-  headers:{
-    "content-type":'application/json',
-    "Accept":"application/json"
+
+  pathForType(){
+    return 'login';
   },
-  
+
   ajax(url, method, hash) {
-    method = "POST";
+    method = 'POST';
 
     return this._super(url,method,hash);
   }
-
 });
