@@ -2,7 +2,7 @@
   <div class="small-10 columns">
     <ol>
       <li>What will be the output of null ===undefined?</li>
-      {{textarea }}
+      {{textarea}}
 
       <li>Consider following two snippets. What will be the result and why?<br/>
       Snippet#1:<br/>
@@ -20,11 +20,15 @@
         console.log('Will this work?');<br/>
       };<br/></li>
       {{textarea }}
-  
     </ol>
+  </div>
+</div>
 
-
-
-    <button> Next </button>
+<div class="row">
+  <div class="small-6 columns">
+    <button {{action 'nextPage'}} class="left"> Next </button>
+  </div>
+  <div class="small-6 columns">
+    <button {{action 'previousPage'}} class="right"> Back </button>
   </div>
 </div>

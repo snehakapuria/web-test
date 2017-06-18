@@ -2,7 +2,7 @@
   <div class="small-10 columns">
     <ol>
       <li>Name any two JavaScript functions, which are used to convert non-numeric values into numbers?</li>
-      {{textarea }}
+      {{textarea value=model.question1}}
 
       <li>Describe “===” operator?</li>
       {{textarea }}
@@ -16,6 +16,10 @@
       <li>What is +’Hey’?</li>
       {{textarea}}
     </ol>
-    <button {{action 'nextPage'}}> Next </button>
+  </div>
+</div>
+<div class="row">
+  <div class="small-2 columns">
+    <button {{action 'nextPage'}} class="right"> Next </button>
   </div>
 </div>
