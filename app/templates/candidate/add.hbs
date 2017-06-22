@@ -1,0 +1,26 @@
+<form>
+  <fieldset>
+    <div class="row">
+      <div class="small-2 columns">
+        <label> First Name: </label>
+      </div>
+      <div class="small-10 columns">
+        {{input type="text" value=model.firstName}}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-2 columns">
+        <label> Last Name: </label>
+      </div>
+      <div class="small-10 columns">
+        {{input type="password" value=model.lastName}}
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="login-button right" {{action 'startTest'}}> Start Test </button>
+    </div>
+
+  </fieldset>
+</form>

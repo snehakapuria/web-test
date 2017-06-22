@@ -1,0 +1,18 @@
+<div class="row">
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"> List of candidates </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |m|}}
+      <tr>
+        <td> {{m.firstName}}, {{m.lastName}}</td>
+        <td> <a {{action "checkResults" m.id}}> check results </a> </td>
+        <td><a>delete </a></td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

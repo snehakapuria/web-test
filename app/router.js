@@ -6,9 +6,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('page1');
-  this.route('page2');
+  this.route('interview-test',{path:'/interview-test/:candidate_id'});
   this.route('login',{path:'/'});
+  this.route('candidate', function() {
+    this.route('show');
+    this.route('add');
+  });
 });
 
 export default Router;

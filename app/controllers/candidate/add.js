@@ -2,9 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions:{
-    signon(){
+    startTest(){
+      debugger;
       this.get('model').save().then(()=>{
-        this.transitionTo('candidate');
+        this.transitionToRoute('interview-test',this.get('model.id'));
       });
     }
   }
