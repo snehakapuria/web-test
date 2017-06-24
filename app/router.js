@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('candidate', function() {
     this.route('show');
     this.route('add');
+    this.route('results',{path:'/:id/results'});
   });
 });
 
