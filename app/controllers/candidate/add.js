@@ -5,7 +5,8 @@ export default Ember.Controller.extend({
     startTest(){
       debugger;
       this.get('model').save().then(()=>{
-        this.transitionToRoute('interview-test',this.get('model.id'));
+        debugger;
+        this.transitionToRoute('interview-test.start',this.get('model.id'));
       });
     }
   }

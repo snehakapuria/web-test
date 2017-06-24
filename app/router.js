@@ -6,7 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('interview-test',{path:'/interview-test/:candidate_id'});
+  this.route('interview-test', {path:'interview-test/:candidate_id'}, function() {
+    this.route('start');
+    this.route('complete');
+  });
   this.route('login',{path:'/'});
   this.route('candidate', function() {
     this.route('show');
