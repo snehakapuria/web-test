@@ -20,9 +20,18 @@
       </div>
     </div>
 
+    {{#if hasException}}
+    <div data-alert class="alert-box alert radius">
+      Oops. Please check username/password.
+    </div>
+    {{/if}}
+
     <div class="row">
       <button class="login-button right" {{action 'signon'}}> Let me in </button>
     </div>
+
+
+
 
   </fieldset>
 </form>
