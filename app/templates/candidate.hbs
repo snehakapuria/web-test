@@ -1,4 +1,9 @@
-<button {{action "addCandidate"}}> Add new candidate</button>
+<div class="menu">
+  <ul>
+    <li><a {{action "addCandidate"}}> Add new candidate</a></li>
+    <li class="right"> <a {{action "displayCandidates"}}> Show Candidates</a></li>
+  </ul>
 
-<button {{action "displayCandidates"}}> Show Candidates</button>
+</div>
+
 {{outlet}}

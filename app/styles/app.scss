@@ -1,6 +1,10 @@
 @import 'bower_components/foundation/scss/normalize';
 @import 'bower_components/foundation/scss/foundation';
 
+body{
+  background-color: #5f9ea0;
+}
+
 form {
   padding:20%;
   background-color: #5f9ea0;
@@ -13,5 +17,20 @@ form {
     background-color: lightseagreen;
     border-radius: 5px;
     margin: 0px 20px;
+  }
+}
+
+.menu{
+  background: #333333;
+  padding: 15px;
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    display: inline;
   }
 }
