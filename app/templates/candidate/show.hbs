@@ -10,7 +10,7 @@
       <tr>
         <td> {{m.firstName}}, {{m.lastName}}</td>
         <td> <a {{action "checkResults" m.id}}> check results </a> </td>
-        <td><a>delete </a></td>
+        <td><a {{action "deleteCandidate" m.id}}>delete candidate </a></td>
       </tr>
     {{/each}}
   </tbody>
